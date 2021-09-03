@@ -99,6 +99,7 @@ class MainActivity : AppCompatActivity() {
         client.newCall(request).enqueue(object : Callback {
             override fun onFailure(call : Call, e : IOException) {
                 Logger.d("failed")
+                Logger.d(e.stackTraceToString())
             }
             
             override fun onResponse(call : Call, response : Response) {
@@ -114,9 +115,8 @@ class MainActivity : AppCompatActivity() {
         Logger.d("Application is Started!")
     }
     
-    override fun onPause() {
-        super.onPause()
+    override fun onDestroy() {
+        super.onDestroy()
         mainScope.cancel()
-        Logger.d("pausing")
     }
 }
