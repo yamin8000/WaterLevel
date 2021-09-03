@@ -1,6 +1,8 @@
 package com.github.yamin8000.waterlevel
 
+import android.graphics.Color
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.github.yamin8000.waterlevel.databinding.ActivityMainBinding
 import com.orhanobut.logger.AndroidLogAdapter
@@ -27,20 +29,66 @@ class MainActivity : AppCompatActivity() {
         prepareLogger()
         
         updateData()
-        binding.text.setOnClickListener { updateData() }
     }
     
     private fun updateData() {
         mainScope.launch {
             while (true) {
-                getDataFromSensorSever { runOnUiThread { updateUi(it) } }
+                getDataFromSensorSever {
+                    runOnUiThread {
+                        if (it.isNotBlank()) updateUi(it)
+                        else showNoDataError()
+                    }
+                }
                 delay(5000)
             }
         }
     }
     
+    private fun showNoDataError() {
+        baseContext?.let {
+            Toast.makeText(baseContext, "error", Toast.LENGTH_SHORT).show()
+        }
+    }
+    
     private fun updateUi(data : String) {
-        binding.text.text = data
+        Logger.d(data)
+        val dataSplit = data.split(' ')
+        if (dataSplit.isNotEmpty()) {
+            val firstTankerPercent = dataSplit[1]
+            val secondTankerPercent = dataSplit[4]
+            showTankerPercents(firstTankerPercent, secondTankerPercent)
+            showTankerLevels(firstTankerPercent, secondTankerPercent)
+        }
+    }
+    
+    private fun showTankerPercents(firstTankerPercent : String, secondTankerPercent : String) {
+        binding.firstTankerData.text = firstTankerPercent
+        binding.secondTankerData.text = secondTankerPercent
+    }
+    
+    private fun showTankerLevels(firstTankerPercent : String, secondTankerPercent : String) {
+        val firstTankerLevel = (firstTankerPercent.trimEnd('%').toInt() / 20)
+        val secondTankerLevel = (secondTankerPercent.trimEnd('%').toInt() / 20)
+        
+        val firstTankerLevelIndicators = listOf(binding.firstTanker1, binding.firstTanker2,
+                                                binding.firstTanker3, binding.firstTanker4,
+                                                binding.firstTanker5)
+        
+        val secondTankerLevelIndicators = listOf(binding.secondTanker1, binding.secondTanker2,
+                                                 binding.secondTanker3, binding.secondTanker4,
+                                                 binding.secondTanker5)
+        
+        val indicators = listOf("1", "2", "3", "4", "5")
+        
+        firstTankerLevelIndicators.forEach {
+            if (it.tag in indicators.subList(0, firstTankerLevel)) it.setBackgroundColor(Color.BLUE)
+            else it.setBackgroundColor(Color.BLACK)
+        }
+        secondTankerLevelIndicators.forEach {
+            if (it.tag in indicators.subList(0, secondTankerLevel)) it.setBackgroundColor(Color.BLUE)
+            else it.setBackgroundColor(Color.BLACK)
+        }
     }
     
     private val client = OkHttpClient()
