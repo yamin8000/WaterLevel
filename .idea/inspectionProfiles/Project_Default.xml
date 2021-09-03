@@ -1,0 +1,202 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AndroidLintConvertToWebp" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintDuplicateStrings" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintEasterEgg" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintIconExpectedSize" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintImplicitSamInstance" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintKotlinPropertyAccess" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintLambdaLast" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintLogConditional" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintMangledCRLF" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintMinSdkTooLow" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintNegativeMargin" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintNewerVersionAvailable" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintNoHardKeywords" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintRegistered" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintTypographyQuotes" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintUnknownNullness" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintUnusedIds" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintWeekBasedYear" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AnonymousClassComplexity" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="3" />
+    </inspection_tool>
+    <inspection_tool class="AnonymousClassMethodCount" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="1" />
+    </inspection_tool>
+    <inspection_tool class="AnonymousHasLambdaAlternative" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AnonymousInnerClassMayBeStatic" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ArrayEquality" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="AssignmentToNull" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoreAssignmentsToFields" value="true" />
+    </inspection_tool>
+    <inspection_tool class="AssignmentUsedAsCondition" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="BreakStatement" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="BreakStatementWithLabel" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ChainedEquality" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ChainedMethodCall" enabled="true" level="INFORMATION" enabled_by_default="true">
+      <option name="m_ignoreFieldInitializations" value="true" />
+      <option name="m_ignoreThisSuperCalls" value="true" />
+    </inspection_tool>
+    <inspection_tool class="ClassComplexity" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="80" />
+    </inspection_tool>
+    <inspection_tool class="ClassCoupling" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_includeJavaClasses" value="false" />
+      <option name="m_includeLibraryClasses" value="false" />
+      <option name="m_limit" value="15" />
+    </inspection_tool>
+    <inspection_tool class="ClassInheritanceDepth" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="2" />
+    </inspection_tool>
+    <inspection_tool class="ClassNestingDepth" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="1" />
+    </inspection_tool>
+    <inspection_tool class="ClassWithoutConstructor" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="ConstructorCount" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoreDeprecatedConstructors" value="false" />
+      <option name="m_limit" value="5" />
+    </inspection_tool>
+    <inspection_tool class="ContinueStatement" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ContinueStatementWithLabel" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ConvertToStringTemplate" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="CyclomaticComplexity" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="10" />
+    </inspection_tool>
+    <inspection_tool class="DefaultNotLastCaseInSwitch" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="DuplicateStringLiteralInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="MIN_STRING_LENGTH" value="5" />
+      <option name="IGNORE_PROPERTY_KEYS" value="false" />
+    </inspection_tool>
+    <inspection_tool class="FallthruInSwitchStatement" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="FeatureEnvy" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoreTestCases" value="false" />
+    </inspection_tool>
+    <inspection_tool class="FieldCount" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="m_countConstantFields" value="false" />
+      <option name="m_considerStaticFinalFieldsConstant" value="false" />
+      <option name="myCountEnumConstants" value="false" />
+      <option name="m_limit" value="10" />
+    </inspection_tool>
+    <inspection_tool class="FieldHasSetterButNoGetter" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="FoldExpressionIntoStream" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ForLoopWithMissingComponent" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="ignoreCollectionLoops" value="false" />
+    </inspection_tool>
+    <inspection_tool class="HardCodedStringLiteral" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="ignoreForAssertStatements" value="true" />
+      <option name="ignoreForExceptionConstructors" value="true" />
+      <option name="ignoreForSpecifiedExceptionConstructors" value="" />
+      <option name="ignoreForJUnitAsserts" value="true" />
+      <option name="ignoreForClassReferences" value="true" />
+      <option name="ignoreForPropertyKeyReferences" value="true" />
+      <option name="ignoreForNonAlpha" value="true" />
+      <option name="ignoreAssignedToConstants" value="true" />
+      <option name="ignoreToString" value="false" />
+      <option name="nonNlsCommentPattern" value="NON-NLS" />
+    </inspection_tool>
+    <inspection_tool class="IfStatementWithTooManyBranches" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="3" />
+    </inspection_tool>
+    <inspection_tool class="InconsistentLineSeparators" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="InstanceofChain" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoreInstanceofOnLibraryClasses" value="false" />
+    </inspection_tool>
+    <inspection_tool class="KDocUnresolvedReference" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="ListIndexOfReplaceableByContains" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="LiteralAsArgToStringEquals" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="LongLine" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="LoopToCallChain" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="LoopWithImplicitTerminationCondition" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="MagicCharacter" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="MagicNumber" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="MapGetWithNotNullAssertionOperator" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="MethodCount" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="20" />
+      <option name="ignoreGettersAndSetters" value="false" />
+      <option name="ignoreOverridingMethods" value="false" />
+    </inspection_tool>
+    <inspection_tool class="MethodCoupling" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_includeJavaClasses" value="false" />
+      <option name="m_includeLibraryClasses" value="false" />
+      <option name="m_limit" value="10" />
+    </inspection_tool>
+    <inspection_tool class="MethodNamesDifferOnlyByCase" enabled="false" level="INFO" enabled_by_default="false" />
+    <inspection_tool class="MethodWithMultipleLoops" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="MisspelledToString" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="MultipleReturnPointsPerMethod" enabled="true" level="INFORMATION" enabled_by_default="true">
+      <option name="ignoreGuardClauses" value="false" />
+      <option name="ignoreEqualsMethod" value="false" />
+      <option name="m_limit" value="1" />
+    </inspection_tool>
+    <inspection_tool class="NegatedIfElse" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_ignoreNegatedNullComparison" value="true" />
+      <option name="m_ignoreNegatedZeroComparison" value="false" />
+    </inspection_tool>
+    <inspection_tool class="NestedMethodCall" enabled="true" level="INFORMATION" enabled_by_default="true">
+      <option name="m_ignoreFieldInitializations" value="true" />
+    </inspection_tool>
+    <inspection_tool class="NestedSwitchStatement" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="NestedTryStatement" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="NestingDepth" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="5" />
+    </inspection_tool>
+    <inspection_tool class="NonCommentSourceStatements" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="30" />
+    </inspection_tool>
+    <inspection_tool class="ObjectLiteralToLambda" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ObjectToString" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ObsoleteCollection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoreRequiredObsoleteCollectionTypes" value="true" />
+    </inspection_tool>
+    <inspection_tool class="OverlyLongLambda" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ParametersPerConstructor" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ParametersPerMethod" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="5" />
+    </inspection_tool>
+    <inspection_tool class="PointlessIndexOfComparison" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ProblematicWhitespace" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="QuestionableName" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="nameString" value="aa,abc,bad,bar,bar2,baz,baz1,baz2,baz3,bb,blah,bogus,bool,cc,dd,defau1t,dummy,dummy2,ee,fa1se,ff,foo,foo1,foo2,foo3,foobar,four,fred,fred1,fred2,gg,hh,hello,hello1,hello2,hello3,ii,nu11,one,silly,silly2,string,two,that,then,three,whi1e,var" />
+    </inspection_tool>
+    <inspection_tool class="RandomDoubleForRandomInteger" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="Reformat" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="ReplaceCollectionCountWithSize" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ReplaceGetOrSet" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ReplaceNotNullAssertionWithElvisReturn" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="ReplaceStringFormatWithLiteral" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ReplaceSubstringWithDropLast" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ReplaceSubstringWithIndexingOperation" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ReplaceSubstringWithSubstringAfter" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ReplaceSubstringWithSubstringBefore" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ReplaceToStringWithStringTemplate" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="SizeReplaceableByIsEmpty" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="StandardVariableNames" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="SystemOutErr" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ThreadDumpStack" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ThreeNegationsPerMethod" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_ignoreInEquals" value="true" />
+      <option name="ignoreInAssert" value="false" />
+    </inspection_tool>
+    <inspection_tool class="ThrowablePrintStackTrace" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ThrownExceptionsPerMethod" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="m_limit" value="3" />
+    </inspection_tool>
+    <inspection_tool class="TypeMayBeWeakened" enabled="false" level="INFORMATION" enabled_by_default="false">
+      <option name="useRighthandTypeAsWeakestTypeInAssignments" value="true" />
+      <option name="useParameterizedTypeForCollectionMethods" value="true" />
+      <option name="doNotWeakenToJavaLangObject" value="true" />
+      <option name="onlyWeakentoInterface" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UnnecessaryToStringCall" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnusedLibrary" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="UseOfObsoleteDateTimeApi" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="UseWithIndex" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="WeakerAccess" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="SUGGEST_PACKAGE_LOCAL_FOR_MEMBERS" value="true" />
+      <option name="SUGGEST_PACKAGE_LOCAL_FOR_TOP_CLASSES" value="true" />
+      <option name="SUGGEST_PRIVATE_FOR_INNERS" value="false" />
+    </inspection_tool>
+  </profile>
+</component>
