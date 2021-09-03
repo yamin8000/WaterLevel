@@ -15,8 +15,8 @@
 #define OLED_RESET -1
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 //wifi station info
-const char* ssid     = "Y.Sn";
-const char* password = "33319970";
+const char* ssid     = "ssid";
+const char* password = "pass";
 //static ip info
 IPAddress local_IP(192, 168, 1, 100);
 IPAddress gateway(192, 168, 1, 1);
