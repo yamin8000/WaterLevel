@@ -30,12 +30,28 @@
             tools:layout_editor_absoluteY="39dp"
             tools:text="@tools:sample/us_phones" />
 
+        <ProgressBar
+            android:id="@+id/firstTankerIndicator"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            tools:layout_editor_absoluteY="45dp" />
+
+        <ProgressBar
+            android:id="@+id/secondTankerIndicator"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            tools:layout_editor_absoluteY="126dp" />
+
         <androidx.constraintlayout.helper.widget.Flow
             android:id="@+id/mainFlow"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:constraint_referenced_ids="firstTankerData,firstTankerFlow,secondTankerData,secondTankerFlow"
+            app:constraint_referenced_ids="firstTankerData,firstTankerIndicator,firstTankerFlow,secondTankerData,secondTankerIndicator,secondTankerFlow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

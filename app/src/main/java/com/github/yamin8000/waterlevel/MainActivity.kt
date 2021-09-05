@@ -1,6 +1,5 @@
 package com.github.yamin8000.waterlevel
 
-import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -26,9 +25,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         
-        prepareLogger()
-        
-        updateData()
+        try {
+            prepareLogger()
+            updateData()
+        } catch (exception : Exception) {
+            baseContext?.let {
+                Toast.makeText(it, "erro", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
     
     private fun updateData() {
@@ -68,27 +72,14 @@ class MainActivity : AppCompatActivity() {
     }
     
     private fun showTankerLevels(firstTankerPercent : String, secondTankerPercent : String) {
-        val firstTankerLevel = (firstTankerPercent.trimEnd('%').toInt() / 20)
-        val secondTankerLevel = (secondTankerPercent.trimEnd('%').toInt() / 20)
+        var firstTankerLevel = (firstTankerPercent.trimEnd('%').toInt())
+        var secondTankerLevel = (secondTankerPercent.trimEnd('%').toInt())
         
-        val firstTankerLevelIndicators = listOf(binding.firstTanker1, binding.firstTanker2,
-                                                binding.firstTanker3, binding.firstTanker4,
-                                                binding.firstTanker5)
+        if (firstTankerLevel < 0) firstTankerLevel = 0
+        if (secondTankerLevel < 0) secondTankerLevel = 0
         
-        val secondTankerLevelIndicators = listOf(binding.secondTanker1, binding.secondTanker2,
-                                                 binding.secondTanker3, binding.secondTanker4,
-                                                 binding.secondTanker5)
-        
-        val indicators = listOf("1", "2", "3", "4", "5")
-        
-        firstTankerLevelIndicators.forEach {
-            if (it.tag in indicators.subList(0, firstTankerLevel)) it.setBackgroundColor(Color.BLUE)
-            else it.setBackgroundColor(Color.BLACK)
-        }
-        secondTankerLevelIndicators.forEach {
-            if (it.tag in indicators.subList(0, secondTankerLevel)) it.setBackgroundColor(Color.BLUE)
-            else it.setBackgroundColor(Color.BLACK)
-        }
+        if (firstTankerLevel in 0..100) binding.firstTankerIndicator.progress = firstTankerLevel
+        if (secondTankerLevel in 0..100) binding.secondTankerIndicator.progress = secondTankerLevel
     }
     
     private val client = OkHttpClient()
